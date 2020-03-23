@@ -71,6 +71,16 @@ body {
     background: url("./assets/805.gif") no-repeat center center rgba(0, 0, 0, 0.25)
 }
 
+.text_wrapper {
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .text_wrapper {
+        margin-top: 0;
+    }
+}
+
 /* .wrapper{
     width: 80%;
     position: absolute;
