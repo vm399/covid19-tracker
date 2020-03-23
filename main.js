@@ -126,7 +126,9 @@ $(document).ready(function () {
                     type: 'column',
                     backgroundColor: '#1e1e1e'
                 },
-
+                credits: {
+                    enabled: false
+                },
                 title: {
                     text: 'Worst Hit Countries',
                     style: {
@@ -216,7 +218,9 @@ $(document).ready(function () {
                     type: 'bar',
                     backgroundColor: '#1e1e1e'
                 },
-
+                credits: {
+                    enabled: false
+                },
                 title: {
                     text: 'Cases per Million of Population',
                     style: {
