@@ -210,9 +210,12 @@ $(document).ready(function () {
             var per_million = [];
             for (i = 0; i < 10; i++) {
                 countries_per_million.push(countries_stat[i].country_name);
-                per_million.push(parseInt(countries_stat[i].total_cases_per_1m_population));
-
+                // per_million.push(parseInt(countries_stat[i].total_cases_per_1m_population));
+                var temp = countries_stat[i].total_cases_per_1m_population;
+                temp = temp.replace(/,/g, "");
+                per_million.push(parseInt(temp));
             }
+            console.log(per_million);
             Highcharts.chart('per_million_chart', {
                 chart: {
                     type: 'bar',
